@@ -1,0 +1,24 @@
+Icone empresa
+<a href="https://www.flaticon.com/br/icones-gratis/companhia" title="companhia ícones">Companhia ícones criados por Freepik - Flaticon</a>
+
+Icone Experimento
+<a href="https://www.flaticon.com/br/icones-gratis/laboratorio" title="laboratório ícones">Laboratório ícones criados por Pixelmeetup - Flaticon</a>
+
+Icone equipe
+<a href="https://www.flaticon.com/br/icones-gratis/equipe" title="equipe ícones">Equipe ícones criados por Freepik - Flaticon</a>
+
+instagram
+<a href="https://www.flaticon.com/free-icons/instagram" title="instagram icons">Instagram icons created by Freepik - Flaticon</a>
+
+linkedin
+<a href="https://www.flaticon.com/free-icons/linkedin" title="linkedin icons">Linkedin icons created by Freepik - Flaticon</a>
+
+facebook
+<div> Icons made by <a href="https://www.freepik.com" title="Freepik"> Freepik </a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com'</a></div>
+
+Checkbox - correto
+<a href="https://www.flaticon.com/br/icones-gratis/check-in-do-foursquare" title="check-in do foursquare ícones">Check-in do foursquare ícones criados por RA_IC0N21 - Flaticon</a>
+
+user
+<a href="https://www.flaticon.com/free-icons/user" title="user icons">User icons created by Freepik - Flaticon</a>
+
