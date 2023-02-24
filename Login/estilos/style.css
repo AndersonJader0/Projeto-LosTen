@@ -34,12 +34,16 @@ h1{
     color: transparent;
 }
 
+h2{
+    color:#38b6ff;
+}
+
 .h1-background{
     display: inline-block;
     background-color: #ececee;
     border-radius: 2em;
-    margin-top: 5em;
-    margin-bottom: 5em;
+    margin-top: 3vh;
+    margin-bottom: 10vh;
 }
 
 .login{
@@ -52,6 +56,10 @@ h1{
     border: 2px solid #38b6ff;
 }
 
+.form{
+    width: 100%;
+}
+
 label{
     margin-left: 1em;
     color:#38b6ff;
@@ -59,6 +67,7 @@ label{
 
 input{
     padding: 1em;
+    width: 100%;
     border-radius: 1.7em;
     border: 3px solid #343333;
     outline: 0;
@@ -78,6 +87,7 @@ input:focus-within{
 
 input[type="submit"]{
     font-size: 1em;
+    transition: 300ms linear;
 }
 
 input[type="submit"]:hover{
@@ -86,9 +96,24 @@ input[type="submit"]:hover{
     border: 3px solid #161615;
     color: #ececee;
     cursor: pointer;
+    transition: 300ms linear;
 }
 
 .esqueci-registre{
     display: flex;
     justify-content:space-around;
+}
+
+@media screen and (max-width: 320px){
+    .login{
+        padding: 1.5em;
+    }
+}
+
+@media screen and (min-width: 26.5625em){
+
+    article{
+        width: 390px;
+        margin: auto;
+    }
 }
