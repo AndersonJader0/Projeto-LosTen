@@ -6,22 +6,89 @@
 
 body{
     font-family: "Poppins";
+    width: 100%;
     background-image: linear-gradient(
         90deg,        black,
         #131312,
         #343333
     );
+    text-align: center;
+    color: white;
+    background-image: linear-gradient(rgba(25,25, 25, .9),rgba(25, 25, 25, .9)), url(/Login/images/6173954.jpg);
+    width: 90%;
+    margin: auto;
 }
 
 h1{
     display: inline-block;
-    background-color: #ececee;
+    font-family: "Poppins";
     width: 9em;
     height: 2em;
-    border-radius: 1em;
     text-align: center;
     line-height: 2em;
-    font-size: 1.7em;
-    font-weight: 1000;
-    color: linear-gradient(to right,#004aad,#5271ff,#38b6ff);
+    font-size: 1.8em;
+    background-image: linear-gradient( to left,
+    #0668cb, #5271ff, #38b6ff);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.h1-background{
+    display: inline-block;
+    background-color: #ececee;
+    border-radius: 2em;
+    margin-top: 5em;
+    margin-bottom: 5em;
+}
+
+.login{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    padding: 3em;
+    background: #161615;
+    border-radius: 2em;
+    border: 2px solid #38b6ff;
+}
+
+label{
+    margin-left: 1em;
+    color:#38b6ff;
+}
+
+input{
+    padding: 1em;
+    border-radius: 1.7em;
+    border: 3px solid #343333;
+    outline: 0;
+    margin-bottom: .5em;
+    font-size: 1em;
+}
+
+input:focus-within{
+    border: 3px solid #38b6ff;
+}
+
+.login a{
+    color:#38b6ff;
+    text-decoration: underline;
+    margin-bottom: .3em;
+}
+
+input[type="submit"]{
+    font-size: 1em;
+}
+
+input[type="submit"]:hover{
+    background-image: linear-gradient( to left,
+    #0668cb, #5271ff, #38b6ff);
+    border: 3px solid #161615;
+    color: #ececee;
+    cursor: pointer;
+}
+
+.esqueci-registre{
+    display: flex;
+    justify-content:space-around;
 }

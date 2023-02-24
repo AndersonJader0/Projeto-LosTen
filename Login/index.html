@@ -11,22 +11,24 @@
     <meta name="keywords" content="Losten, login, user, registre-se, grátis">
     <link rel="stylesheet" href="estilos/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
 
     <title>Login - LosTen</title>
 </head>
 <body>
 
-        <h1>Losten</h1>
+        <span class="h1-background"><h1>LosTen</h1></span>
 
         <article class="login">
             <label for="email">Email</label>
-            <input type="email" id="email" name="mail">
-            <label for="password"></label>
-            <input type="password" id="password" name="pass">  
-            <p>Esqueci a senha</p>
-            <p>Registre-se</p>
+            <input type="email" id="email" name="mail" placeholder="Digite aqui">
+            <label for="password">Senha</label>
+            <input type="password" id="password" name="pass" placeholder="Digite aqui"> 
+            <div class="esqueci-registre">
+            <a href="#">Esqueci a senha</a>
+            <a href="#">Registre-se</a>
+            </div>
             <input type="submit" value="Logar"></input>
         </article>
 
