@@ -14,7 +14,7 @@ body{
     );
     text-align: center;
     color: white;
-    background-image: linear-gradient(rgba(25,25, 25, .9),rgba(25, 25, 25, .9)), url(/Login/images/6173954.jpg);
+    background-image: linear-gradient(rgba(25,25, 25, .8),rgba(25, 25, 25, .8)), url(../images/6173954.jpg);
     width: 90%;
     margin: auto;
 }
