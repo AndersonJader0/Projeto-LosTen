@@ -33,6 +33,17 @@ body{
     font-weight: bold;
 }
 
+.menu a{
+    text-decoration: none;
+    color: white;
+    padding: .9em;
+}
+
+.menu a:hover{
+    background-color: #0687d1;
+    transition: all .5s;
+}
+
 /* TOPO */
 
 .principal{
@@ -277,6 +288,7 @@ article p{
     width: 100%;
     text-align: center;
     font-weight: bold;
+    margin-bottom: 1em;
 }
 
 .adicional3 span{
@@ -286,3 +298,34 @@ article p{
 .frase-motivacional strong{
     color: #0668bc;
 }
+
+/* Footer */
+
+.rodape{
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    list-style: none;
+}
+
+.rodape img{
+    width: 33%;
+}
+
+footer div p{
+    display: inline-block;
+    width: 30%;
+    margin: 1%;
+    text-align: center;
+    font-size: .7em;
+}
+
+footer > p{
+    background-color: #0668bc;
+    margin-top: 1em;
+    padding: 1em;
+    text-align: center;
+}
+
