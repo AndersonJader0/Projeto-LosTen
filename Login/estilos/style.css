@@ -117,3 +117,19 @@ input[type="submit"]:hover{
         margin: auto;
     }
 }
+
+@media screen and (min-width: 1400px){
+
+    .h1-background{
+        margin-top: 10vh;
+    }
+
+    .login{
+        width: 400px;
+        height: 360px;
+    }
+
+    .login input{
+        margin-bottom: 1vh;
+    }
+}
