@@ -139,7 +139,61 @@ button{
     font-size: 1em;
     background-image: linear-gradient(to right, #5ce1e6, #1aaaff, #0668bc);
     color: white;
+    margin-bottom: 2em;
 }
 
+/* Parte descritiva */
+
+.descricao__title{
+    background-image: linear-gradient(to right, #5ce1e6, #1aaaff, #0668bc);
+    margin-bottom: 1em;
+}
+.descricoes{
+    border: 3px solid #0668bc;
+    margin-bottom: 2em;
+}
+
+article{
+    padding: 3% 7% 7% 7%;
+}
+
+article h3{
+    margin-bottom: .5em;
+}
+
+.descricao img{
+    width: 20%;
+}
+
+article p{
+    text-align: justify;
+}
+
+/* Adicional */
+
+.adicional{
+    text-align: justify;
+}
+
+.adicional__title{
+    background-image:linear-gradient(to right, #5ce1e6, #1aaaff, #0668bc);
+    border-radius: 2em;
+    display: inline-block;
+    width: 10em;
+    margin-bottom: 1em;
+}
+
+.divisao-subtitle{
+    border-bottom: 3px solid #5ce1e6;
+    margin-bottom: 1em;
+}
+
+.adicional h4 strong, .adicional p strong{
+    color: #5ce1e6;
+}
+
+.adicional img{
+    width: 100%;
+}
 
 
