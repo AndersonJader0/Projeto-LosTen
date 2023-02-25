@@ -1,0 +1,145 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #161615;
+    font-family: "Poppins";
+    color: white;
+}
+
+/* MENU */
+
+.menu__content img{
+    width: 13px;
+}
+
+.menu__content{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: #0668bc;
+    color: white;
+    align-items: center;
+}
+
+.menu__items{
+    padding: 1em;
+    list-style: none;
+    text-transform: uppercase;
+    align-self: center;
+    font-weight: bold;
+}
+
+/* TOPO */
+
+.principal{
+    width: 90%;
+    text-align: center;
+    margin: auto;
+}
+
+h1{
+    background-color: #0668bc;
+    color: white;
+    border-radius: 2em;
+    margin-top: 2em;
+    display: inline-block;
+    width: 5em;
+}
+
+h1::first-letter{
+    color: #1aaaff;
+    font-size: 1.3em;
+    text-shadow: 1px 1px 1px white;
+}
+
+.topo__subtitle span{
+    display: inline-block;
+    background-image: linear-gradient(to right, #5ce1e6, #1aaaff, #0668bc);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent; 
+    margin-bottom: 1em;
+}
+
+.topo__paragrafo span{
+    display: inline-block;
+    color: #5ce1e6;
+    margin-bottom: 1em;
+}
+
+.topo__subtitle2{
+    background-image: linear-gradient(to left, #5ce1e6, #1aaaff, #0668bc);
+    text-transform: uppercase;
+    font-size: 1.4em;
+    margin-bottom: 1em;
+}
+
+@keyframes slide{
+
+    0%, 22%, 100%{
+        transform: translateY(0);
+    }
+
+    25%, 47%{
+        transform: translateY(-43.5vh);
+    }
+
+    50%, 72%{
+        transform: translateY(-87vh);
+    }
+
+    75%, 97%{
+        transform: translateY(-130.5vh);
+    }
+}
+
+.topo__slide-externo{
+    height: 43.5vh;
+    width: 100%;
+    overflow: hidden;
+    border: 6px solid #5ce1e6;
+    margin-bottom: .5em;
+}
+
+.topo__slide-interno{
+    width: 100%;
+    will-change: transform;
+    animation: slide 15s infinite;
+}
+
+.topo__slide-interno img{
+    height: 43.5vh;
+    width: 100%;
+    display: block;
+}
+
+.topo__valorpromocao{
+    display: inline-block;
+    background-image: linear-gradient(to right, #5ce1e6, #1aaaff, #0668bc);
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    font-weight: bold;
+    font-size: 2em;
+}
+
+.topo__valorcortado{
+    text-decoration: line-through;
+}
+
+button{
+    padding: 1em;
+    width: 12em;
+    border-radius: 2em;
+    border: none;
+    font-size: 1em;
+    background-image: linear-gradient(to right, #5ce1e6, #1aaaff, #0668bc);
+    color: white;
+}
+
+
+
