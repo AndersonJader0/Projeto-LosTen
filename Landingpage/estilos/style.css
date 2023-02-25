@@ -194,6 +194,95 @@ article p{
 
 .adicional img{
     width: 100%;
+    margin-bottom: 1em;
+}
+
+.adicional2{
+    text-align: justify;
+    display: flex;
+    flex-direction: column;
+}
+
+.adicional2 div{
+    display: flex;
+    flex-direction: row;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+.adicional2 div span{
+    background: #5ce1e6;
+    display: inline-block;
+    padding: .5em;
+    border-radius: 2em;
+}
+
+.adicional2 h3 strong{
+    color: #1aaaff;
+}
+
+.adicional2 h3 .brasil, .adicional2 div .brasil{
+    color: yellow;
+}
+
+.adicional2 div strong{
+    color: #1aaaff;
+}
+
+.adicional2 img{
+    width: 30%;
+    margin-left: 5px;
+    margin-bottom: 1em;
+}
+
+.adicional2 button{
+    margin-left: 50%;
+    transform: translateX(-6em);
+}
+
+/* section 3 */
+
+.adicional3{
+    text-align: justify;
+}
+
+.adicional3 h3{
+    margin-bottom: 1em;
+}
+
+.adicional3 img{
+    width: 10%;
+    height: 10%;
+    display: inline-block;
 }
 
 
+.adicional3 div{
+    display: inline-block;
+}
+
+.adicional3 p{
+    display: inline-block;
+    width: 80%;
+    margin-bottom: 1em;
+}
+
+.adicional3 .atleta{
+    width: 100%;
+}
+
+.adicional3 .frase-motivacional{
+    font-size: 1.2em;
+    display: block;
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+}
+
+.adicional3 span{
+    color: #1aaaff;
+}
+
+.frase-motivacional strong{
+    color: #0668bc;
+}
