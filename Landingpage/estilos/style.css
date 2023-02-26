@@ -10,6 +10,12 @@ body{
     color: white;
 }
 
+/*Formatando largura*/
+
+main{
+    max-width: 1100px;
+}
+
 /* MENU */
 
 .menu__content img{
@@ -219,15 +225,21 @@ article p{
 
 /* Informativo 2 | +200mil footnister*/
 
+.informativo3 h3{
+    text-align: center;
+}
+
 .informativo2{
     text-align: justify;
     display: flex;
     flex-direction: column;
+    text-align: center;
 }
 
 .informativo2 div{
     display: flex;
     flex-direction: row;
+    justify-content: space-around;
     margin-top: 1em;
     margin-bottom: 1em;
 }
@@ -255,8 +267,6 @@ article p{
 .informativo2 img{
     width: 20%;
     margin-bottom: 1em;
-    display: inline-block;
-    margin: auto;
 }
 
 .informativo2 button{
@@ -277,31 +287,39 @@ article p{
 .informativo3 img{
     width: 10%;
     height: 10%;
-    display: inline-block;
-}
-
-
-.informativo3 div{
-    display: inline-block;
-}
-
-.informativo3 p{
-    display: inline-block;
-    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 1em;
     margin-bottom: 1em;
 }
 
-.informativo3 .atleta{
+
+
+.informativo3 div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.informativo3 p{
+    display: flex;
+    align-items: center;
+    width: 80%;
+}
+
+.atleta{
     width: 100%;
 }
 
-.informativo3 .frase-motivacional{
+.frase-motivacional{
     font-size: 1.2em;
     display: block;
     width: 100%;
     text-align: center;
     font-weight: bold;
-    margin-bottom: 1em;
+    margin-bottom: 2em;
 }
 
 .informativo3 span{
@@ -340,5 +358,215 @@ footer > p{
     margin-top: 1em;
     padding: 1em;
     text-align: center;
+}
+
+
+@media screen and (min-width:500px) {
+    .topo h1{
+        margin-top: 1em;
+    }
+
+    .topo__subtitle2{
+        margin-bottom: .2em;
+    }
+
+    @keyframes slide{
+
+    0%, 22%, 100%{
+        transform: translateY(0);
+    }
+
+    25%, 47%{
+        transform: translateY(-55vh);
+    }
+
+    50%, 72%{
+        transform: translateY(-110vh);
+    }
+
+    75%, 97%{
+        transform: translateY(-165vh);
+    }
+}
+
+.topo__slide-externo{
+    height: 55vh;
+    width: 100%;
+    overflow: hidden;
+    border: 6px solid #5ce1e6;
+    margin-bottom: .5em;
+}
+
+.topo__slide-interno{
+    width: 100%;
+    will-change: transform;
+    animation: slide 15s infinite;
+}
+
+.topo__slide-interno img{
+    height: 55vh;
+    width: 100%;
+    display: block;
+} 
+}
+
+@media screen and (min-width:600px) {
+
+
+    @keyframes slide{
+
+        0%, 22%, 100%{
+            transform: translateY(0);
+        }
+    
+        25%, 47%{
+            transform: translateY(-450px);
+        }
+    
+        50%, 72%{
+            transform: translateY(-900px);
+        }
+    
+        75%, 97%{
+            transform: translateY(-1350px);
+        }
+    }
+    
+    .topo__slide-externo{
+        height: 450px;
+        width: 540px;
+        overflow: hidden;
+        border: 6px solid #5ce1e6;
+        margin-bottom: .5em;
+    }
+    
+    .topo__slide-interno{
+        width: 100%;
+        will-change: transform;
+        animation: slide 15s infinite;
+    }
+    
+    .topo__slide-interno img{
+        height: 450px;
+        width: 100%;
+        display: block;
+    } 
+}
+
+@media screen and (min-width:768px){
+
+    .descricao{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .descricoes{
+        width: 46%;
+        margin: 2%;
+    }
+
+    .informativo2 p{
+        margin-top: 5%;
+    }
+
+    .rodape img{
+        width: 20%;
+    }
+
+    .informativo img{
+        width: 40%;
+        margin: 0;
+        margin-left: 50%;
+        transform: translateX(-40%);
+    }
+}
+
+@media screen and (min-width:1000px){
+
+    .topo__content{
+        display: flex;
+    }
+
+    .topo__content__intern{
+        width: 400px;
+        padding: 0 1em 1em 1em;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: justify;
+        margin: auto;
+        font-size: 1.2em;
+    }
+
+    .topo__subtitle2{
+        width: 540px;
+        margin: auto;
+        margin-bottom: 1em;
+    }
+
+    .topo__paragrafo{
+        font-size: 1.6em;
+        width: auto;
+        margin: 0;
+    }
+
+    .descricao{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .descricoes{
+        width: 24%;
+        margin: .5%;
+        padding: 2em 2em;
+    }
+
+    .descricao img{
+        width: 50%;
+    }
+
+    .informativo2{
+        border-right: 3px solid #0668bc;
+    }
+
+    .informativo2 h3{
+        margin-right: 5%;
+    }
+    .informativo23{
+        display: flex;
+    }
+
+    .informativo3 h3{
+        margin-left: 5%;
+    }
+    
+    .frase-motivacional{
+        margin-bottom: 2em;
+        font-size: 1.5em;
+        font-weight: bold;
+        border-bottom: 1px solid #0668bc;
+    }
+
+    footer div p{
+        margin: 1.5%;
+    }
+
+    .rodape img{
+        width: 10%;
+    }
+
+    .informativo__title{
+        margin-top: 3em;
+    }
+
+    .atleta{
+        width: 30%;
+    }
+}
+
+@media screen and (min-width: 1400px){
+
+    
 }
 
