@@ -1,3 +1,5 @@
+/* FORMATANDO A PÁGINA */
+
 *{
     box-sizing: border-box;
     margin: 0;
@@ -10,19 +12,17 @@ body{
     color: white;
 }
 
-/*Formatando largura*/
-
 main{
     max-width: 1100px;
 }
 
 /* MENU */
 
-.menu__content img{
+.menu-content img{
     width: 13px;
 }
 
-.menu__content{
+.menu-content{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -31,7 +31,7 @@ main{
     align-items: center;
 }
 
-.menu__items{
+.menu-content-items{
     padding: 1em;
     list-style: none;
     text-transform: uppercase;
@@ -73,7 +73,7 @@ h1::first-letter{
     text-shadow: 1px 1px 1px white;
 }
 
-.topo__subtitle span{
+.topo-subtitle span{
     display: inline-block;
     background-image: linear-gradient(to right, #5ce1e6, #1aaaff, #0668bc);
     background-clip: text;
@@ -82,13 +82,12 @@ h1::first-letter{
     margin-bottom: 1em;
 }
 
-.topo__paragrafo span{
+.topo-content-oferta span{
     display: inline-block;
     color: #5ce1e6;
-    margin-bottom: 1em;
 }
 
-.topo__subtitle2{
+.topo-subtitle2{
     background-image: linear-gradient(to left, #5ce1e6, #1aaaff, #0668bc);
     text-transform: uppercase;
     font-size: 1.4em;
@@ -114,7 +113,7 @@ h1::first-letter{
     }
 }
 
-.topo__slide-externo{
+.topo-content-slide-externo{
     height: 43.5vh;
     width: 100%;
     overflow: hidden;
@@ -122,29 +121,33 @@ h1::first-letter{
     margin-bottom: .5em;
 }
 
-.topo__slide-interno{
+.topo-content-slide-interno{
     width: 100%;
     will-change: transform;
     animation: slide 15s infinite;
 }
 
-.topo__slide-interno img{
+.topo-content-slide-interno img{
     height: 43.5vh;
     width: 100%;
     display: block;
 }
 
-.topo__valorpromocao{
-    display: inline-block;
-    background-image: linear-gradient(to right, #5ce1e6, #1aaaff, #0668bc);
+.topo-content-oferta-proposta{
+    font-size: 1.3em;
+}
+
+.topo-content-oferta-proposta .valor-oferta{
+    background-image: linear-gradient(to right, #00f7ff, #1aaaff, #00f7ff, #1aaaff, #00f7ff);
     color: transparent;
     background-clip: text;
     -webkit-background-clip: text;
     font-weight: bold;
     font-size: 2em;
+    text-decoration: underline;
 }
 
-.topo__valorcortado{
+.valor-cortado{
     text-decoration: line-through;
 }
 
@@ -170,13 +173,18 @@ button:hover{
 
 /* Parte descritiva */
 
-.descricao__title{
+.descricao-title{
     background-image: linear-gradient(to right, #5ce1e6, #1aaaff, #0668bc);
     margin-bottom: 1em;
+    padding: 1em;
 }
-.descricoes{
+.descricao-content{
     border: 3px solid #0668bc;
     margin-bottom: 2em;
+}
+
+.descricao-content img{
+    width: 20%;
 }
 
 article{
@@ -187,9 +195,6 @@ article h3{
     margin-bottom: .5em;
 }
 
-.descricao img{
-    width: 20%;
-}
 
 article p{
     text-align: justify;
@@ -201,7 +206,7 @@ article p{
     text-align: justify;
 }
 
-.informativo__title{
+.informativo-title{
     background-image:linear-gradient(to right, #5ce1e6, #1aaaff, #0668bc);
     border-radius: 2em;
     display: inline-block;
@@ -209,9 +214,10 @@ article p{
     margin-bottom: 1em;
 }
 
-.divisao-subtitle{
+.container-subtitle{
     border-bottom: 3px solid #5ce1e6;
     margin-bottom: 1em;
+    font-size: 1.3em;
 }
 
 .informativo h4 strong, .informativo p strong{
@@ -360,13 +366,35 @@ footer > p{
     text-align: center;
 }
 
+footer a{
+    color: white;
+    text-decoration: none;
+    font-size: .7em;
+}
+
+.atribuicoes{
+    background: #02fefe;
+    color: #000000;
+    border-bottom: 1px solid black;
+}
+
+.atribuicoes-content{
+    background: #02fefe;
+    color: #000000;
+    margin-top: 0;
+}
+
+.atribuicoes-content a{
+    color: #000000;
+}
+
 
 @media screen and (min-width:500px) {
     .topo h1{
         margin-top: 1em;
     }
 
-    .topo__subtitle2{
+    .topo-subtitle2{
         margin-bottom: .2em;
     }
 
@@ -389,7 +417,7 @@ footer > p{
     }
 }
 
-.topo__slide-externo{
+.topo-content-slide-externo{
     height: 55vh;
     width: 100%;
     overflow: hidden;
@@ -397,13 +425,13 @@ footer > p{
     margin-bottom: .5em;
 }
 
-.topo__slide-interno{
+.topo-content-slide-interno{
     width: 100%;
     will-change: transform;
     animation: slide 15s infinite;
 }
 
-.topo__slide-interno img{
+.topo-content-slide-interno img{
     height: 55vh;
     width: 100%;
     display: block;
@@ -432,7 +460,7 @@ footer > p{
         }
     }
     
-    .topo__slide-externo{
+    .topo-content-slide-externo{
         height: 450px;
         width: 540px;
         overflow: hidden;
@@ -440,13 +468,13 @@ footer > p{
         margin-bottom: .5em;
     }
     
-    .topo__slide-interno{
+    .topo-content-slide-interno{
         width: 100%;
         will-change: transform;
         animation: slide 15s infinite;
     }
     
-    .topo__slide-interno img{
+    .topo-content-slide-interno img{
         height: 450px;
         width: 100%;
         display: block;
@@ -460,7 +488,7 @@ footer > p{
         flex-wrap: wrap;
     }
 
-    .descricoes{
+    .descricao-content{
         width: 46%;
         margin: 2%;
     }
@@ -483,11 +511,11 @@ footer > p{
 
 @media screen and (min-width:1000px){
 
-    .topo__content{
+    .topo-content{
         display: flex;
     }
 
-    .topo__content__intern{
+    .topo-content-oferta{
         width: 400px;
         padding: 0 1em 1em 1em;
         display: flex;
@@ -499,13 +527,13 @@ footer > p{
         font-size: 1.2em;
     }
 
-    .topo__subtitle2{
+    .topo-subtitle2{
         width: 540px;
         margin: auto;
         margin-bottom: 1em;
     }
 
-    .topo__paragrafo{
+    .topo-content-oferta-paragrafo{
         font-size: 1.6em;
         width: auto;
         margin: 0;
@@ -516,7 +544,7 @@ footer > p{
         flex-direction: row;
     }
 
-    .descricoes{
+    .descricao-content{
         width: 24%;
         margin: .5%;
         padding: 2em 2em;
@@ -533,7 +561,7 @@ footer > p{
     .informativo2 h3{
         margin-right: 5%;
     }
-    .informativo23{
+    .container-informativo2{
         display: flex;
     }
 
@@ -556,17 +584,12 @@ footer > p{
         width: 10%;
     }
 
-    .informativo__title{
+    .informativo-title{
         margin-top: 3em;
+        padding: .7em;
     }
 
     .atleta{
         width: 30%;
     }
 }
-
-@media screen and (min-width: 1400px){
-
-    
-}
-
