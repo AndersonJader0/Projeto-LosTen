@@ -18,10 +18,6 @@ main{
 
 /* MENU */
 
-.menu-content img{
-    width: 13px;
-}
-
 .menu-content{
     display: flex;
     flex-direction: row;
@@ -48,6 +44,10 @@ main{
 .menu a:hover{
     background-color: #0687d1;
     transition: all .5s;
+}
+
+.menu-content img{
+    width: 13px;
 }
 
 /* TOPO */
@@ -80,11 +80,6 @@ h1::first-letter{
     -webkit-background-clip: text;
     color: transparent; 
     margin-bottom: 1em;
-}
-
-.topo-content-oferta span{
-    display: inline-block;
-    color: #5ce1e6;
 }
 
 .topo-subtitle2{
@@ -133,6 +128,11 @@ h1::first-letter{
     display: block;
 }
 
+.topo-content-oferta span{
+    display: inline-block;
+    color: #5ce1e6;
+}
+
 .topo-content-oferta-proposta{
     font-size: 1.3em;
 }
@@ -164,14 +164,13 @@ button{
     transition: all .5s;
 }
 
-
 button:hover{
     background-image: linear-gradient(to right, #0668bc, #1aaaff,  #5ce1e6);
     cursor: pointer;
     transition: all .5s;
 }
 
-/* Parte descritiva */
+/* DESCRIÇÃO */
 
 .descricao-title{
     background-image: linear-gradient(to right, #5ce1e6, #1aaaff, #0668bc);
@@ -195,12 +194,11 @@ article h3{
     margin-bottom: .5em;
 }
 
-
 article p{
     text-align: justify;
 }
 
-/* informativo | 100g em um tênis*/
+/* INFORMATIVO | 100g em um tênis*/
 
 .informativo{
     text-align: justify;
@@ -229,7 +227,7 @@ article p{
     margin-bottom: 1em;
 }
 
-/* Informativo 2 | +200mil footnister*/
+/* INFORMATIVO 2 | +200mil footnister*/
 
 .informativo3 h3{
     text-align: center;
@@ -250,24 +248,24 @@ article p{
     margin-bottom: 1em;
 }
 
-.informativo2 div span{
-    background: #5ce1e6;
-    display: inline-block;
-    padding: .5em;
-    border-radius: 2em;
-    margin-bottom: 1em;
+.informativo2 h3 .brasil, .informativo2 div .brasil{
+    color: yellow;
 }
 
 .informativo2 h3 strong{
     color: #1aaaff;
 }
 
-.informativo2 h3 .brasil, .informativo2 div .brasil{
-    color: yellow;
-}
-
 .informativo2 div strong{
     color: #1aaaff;
+}
+
+.informativo2 div span{
+    background: #5ce1e6;
+    display: inline-block;
+    padding: .5em;
+    border-radius: 2em;
+    margin-bottom: 1em;
 }
 
 .informativo2 img{
@@ -280,7 +278,7 @@ article p{
     transform: translateX(-6em);
 }
 
-/* informativo 3 | Não esqueça de fazer o login */
+/* INFORMATIVO 3 | Não esqueça de fazer o login */
 
 .informativo3{
     text-align: justify;
@@ -300,8 +298,6 @@ article p{
     margin-bottom: 1em;
 }
 
-
-
 .informativo3 div{
     display: flex;
     flex-direction: column;
@@ -319,6 +315,10 @@ article p{
     width: 100%;
 }
 
+.informativo3 span{
+    color: #1aaaff;
+}
+
 .frase-motivacional{
     font-size: 1.2em;
     display: block;
@@ -326,10 +326,6 @@ article p{
     text-align: center;
     font-weight: bold;
     margin-bottom: 2em;
-}
-
-.informativo3 span{
-    color: #1aaaff;
 }
 
 .frase-motivacional strong{
@@ -388,6 +384,8 @@ footer a{
     color: #000000;
 }
 
+
+/* Responsividade */
 
 @media screen and (min-width:500px) {
     .topo h1{
