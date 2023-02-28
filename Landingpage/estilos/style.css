@@ -343,6 +343,12 @@ article p{
     list-style: none;
 }
 
+.rodape ul{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+}
+
 .rodape img{
     width: 33%;
 }
