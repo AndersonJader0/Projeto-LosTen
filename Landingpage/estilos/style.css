@@ -76,8 +76,8 @@ h1::first-letter{
 .topo-subtitle span{
     display: inline-block;
     background-image: linear-gradient(to right, #5ce1e6, #1aaaff, #0668bc);
-    background-clip: text;
     -webkit-background-clip: text;
+    background-clip: text;
     color: transparent; 
     margin-bottom: 1em;
 }
@@ -140,8 +140,8 @@ h1::first-letter{
 .topo-content-oferta-proposta .valor-oferta{
     background-image: linear-gradient(to right, #00f7ff, #1aaaff, #00f7ff, #1aaaff, #00f7ff);
     color: transparent;
-    background-clip: text;
     -webkit-background-clip: text;
+    background-clip: text;
     font-weight: bold;
     font-size: 2em;
     text-decoration: underline;
@@ -438,6 +438,12 @@ footer a{
 
 @media screen and (min-width:600px) {
 
+    .topo-subtitle2{
+        width: 540px;
+        margin-left: 50%;
+        transform: translateX(-270px);
+    }
+
 
     @keyframes slide{
 
@@ -464,6 +470,8 @@ footer a{
         overflow: hidden;
         border: 6px solid #5ce1e6;
         margin-bottom: .5em;
+        margin-left: 50%;
+        transform: translateX(-270px);
     }
     
     .topo-content-slide-interno{
@@ -480,7 +488,7 @@ footer a{
 }
 
 @media screen and (min-width:768px){
-
+    
     .descricao{
         display: flex;
         flex-wrap: wrap;
@@ -511,6 +519,16 @@ footer a{
 
     .topo-content{
         display: flex;
+    }
+
+    .topo-subtitle2{
+        margin-left: 0%;
+        transform: translateX(0px);
+    }
+
+    .topo-content-slide-externo{
+        margin-left: 0%;
+        transform: translateX(0px);
     }
 
     .topo-content-oferta{
